@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+/* start header */
+body{
+    font-family: 'Lobster', cursive;
+font-family: 'Poppins', sans-serif;
+}
+/* --------------header----------- */
+header{
+    display: flex;
+    align-items: center;
+    background-color: #161616;
+    border-radius: 30px;
+    width: 1170px;
+    height:500px;
+    margin-left: 8%;
+    margin-bottom: 20px;
+}
+.text a{
+    color: white;
+    background-color:  #DD0000;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 15px;
+ }
+
+.text,h1,p{
+    color: white;
+}
+.text>h1{
+    font-size: 60px;
+}
+.text{
+    padding: 110px 106px;
+}
+.style:hover{
+    background-color: #DD0000;
+}
+
+
+/* ------------header end------------ */
+/* first-section start */
+.dami{
+    width: 270px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(138, 130, 130);
+}
+
+.blog a{
+    text-decoration: none;
+    color: #161616;
+    padding: 5px 15px;
+    border-radius: 7px;
+    border: 1px solid black;
+    }
+.blog{
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+.img img{
+        width: 100%;
+    }
+
+.all_card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.link{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    border-radius: 10px;
+    width: 312px;
+    height: 312px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.link  a{
+    padding-top: 27px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    width: 220px;
+    height: 50px;
+    color: black;
+}
+
+.social{
+    display: flex;
+   align-items: center;
+}
+section{
+    display: flex;
+    gap: 30px;
+    margin-left: 10vw;
+}
+.btn-style{
+    text-decoration: none;
+    color: white;
+    background-color: #DD0000;
+    padding: 8px 12px;
+    display: none;
+}
+/* -----------first section end------------ */
+/* --------footer start--------- */
+footer{
+    margin-left: 20px;
+    margin-top: 120px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 444px;
+    background-color: #161616;
+}
+footer h2{
+    padding-top: 130px;
+}
+footer a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+.new{
+    margin-top: 7px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.fa-facebook-square{
+    color: rgba(68, 68, 235, 0.742);
+}
+.fa-twitter{
+    color: rgb(0, 255, 255);
+}
+.fa-instagram{
+    color: plum;
+}
+/* ---------footer end------------ */
+/* tab view  */
+@media only screen and (max-width:990px) {
+    section{
+        flex-direction: column;
+    }
+    .text{
+        padding-left: 30px;
+        font-size: 10px;
+        width: 70%;
+    }
+
+    .link{
+        flex-direction: row;
+        width: 87%;
+        height: 60px;
+    }
+
+    .all_card{
+        display: grid;
+        grid-template-columns:auto auto;
+    }
+
+    .dami{
+        width: 350px;
+        height: 414px;
+    }
+    .text>h1{
+        font-size: 40px;
+    }
+    .style{
+       box-shadow: 3px 3px 4px gainsboro;
+    }
+    header{
+    width: 700px;
+    height:500px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+    footer a{
+        display: block;
+        padding-top: 5px;
+    }
+    .btn{
+        display: inline-block;
+        margin-left: 50%;
+    } 
+     .btn-style{
+        display: inline-block;
+        margin-left: 50%;
+    }
+    
+}
+
+
+/* mobile view  */
+@media only screen and (max-width:640px) {
+header{
+    flex-direction: column;
+    width: 100%;
+}
+
+.all_card{
+    display: grid;
+    grid-template-columns:auto;
+    align-items: center;
+}
+    .pic{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .pic img{
+        width: 200px;
+    }
+
+    .text{
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 7px;
+    }
+    .text h1{
+        font-size: 30px;
+    }
+    .btn{
+        margin-right: 40%;
+        
+    }
+   
+}
